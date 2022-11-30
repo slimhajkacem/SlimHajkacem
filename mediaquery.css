@@ -1,0 +1,10 @@
+@media screen and (max-width: 550px) {
+  .right-column{
+    display:none; 
+ 	 
+  
+  }
+body {
+  overflow-x: hidden; 
+}
+}
