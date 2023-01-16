@@ -29,13 +29,24 @@ h1{
   font-size: 2.5rem;
   margin-bottom: .5rem;
 }
-
+.NomPrenom{
+  margin-bottom: .1rem;
+}
 h2{
   margin: 0 0 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
- 
+.Poste{
+  margin: 0 0 0;
+}
+.Liaison{
+  text-transform: lowercase;
+  font-size: 12pt;
+}
+ .TypeContrat{
+  font-size: 12pt;
+ }
 .text-blue{
   color: #4472C4;
 }
@@ -77,11 +88,11 @@ h2{
 }
 
 .portait{
-  border-radius: 50%;
+  border-radius: 25%;
   max-width: 150px;
   margin: auto;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .skills{
@@ -104,7 +115,7 @@ h2{
 
 /* HEADER */
 .header{
-  height: 150px;
+  height: 165px;
   grid-area: header;
   padding: 50px;
   padding-bottom: 50px;
@@ -148,3 +159,4 @@ progress::-webkit-progress-value {
 progress {
   background: rgb(186, 194, 188);
 }
+

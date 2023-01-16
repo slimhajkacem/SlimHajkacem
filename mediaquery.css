@@ -1,20 +1,21 @@
 @media screen and (max-width: 550px) {
-  .right-column{
-    display:none; 
+  .right-column {
+    display: none;
 
   }
-  .left-column{
-    width : 100%;
+
+  .left-column {
+    width: 100%;
   }
-.cv-container
-{  
-width : 100%;
-display:flex;
+
+  .cv-container {
+    width: 100%;
+    display: flex;
     grid-template-columns: 2fr 1fr 1fr;
 
-}
+  }
 
-body {
-  overflow-x: hidden; 
-}
+  body {
+    overflow-x: hidden;
+  }
 }
