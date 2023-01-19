@@ -6,9 +6,11 @@
 
 body{
   font-family: Roboto;
-  font-weight: 300;
+  /* font-weight: 300; */
   font-size: .9rem;
   line-height: 1.5;
+  width: 100%;
+  text-align: justify;
 }
 
 a{
@@ -22,8 +24,15 @@ a:hover{
 
 p{
   margin: 0 0 1rem;
+  text-align: justify;
 }
-
+.UlLeft {  
+  margin-left: -22px; 
+}
+ul{  
+  margin-left: -28px; 
+  margin-bottom: 2px;
+}
 h1{
   margin: 0 0 1rem;
   font-size: 2.5rem;
@@ -31,14 +40,20 @@ h1{
 }
 .NomPrenom{
   margin-bottom: .1rem;
+  margin-left: -40px;
 }
 h2{
   margin: 0 0 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.Pprofessionelles{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .Poste{
   margin: 0 0 0;
+  margin-left: -40px;
 }
 .Liaison{
   text-transform: lowercase;
@@ -67,32 +82,39 @@ h2{
 
 .cv-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-areas: "left-column right-column right-column";
-  width: 1200px;
-  margin: 30px auto;
+  width: 1400px;  
+  margin: 2px auto;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .section{
   margin-bottom: 1.5rem;
 }
-
+/* .SFormations{  
+  margin-top: 5px;
+  margin-bottom: 5px;
+} */
 /* LEFT COLUMN */
 .left-column{
   grid-area: left-column;
   /* padding: 50px; */
-  padding: 10px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
   background-color: #4472C4;
   color: white;
+  width: 337px;
 }
 
 .portait{
   border-radius: 25%;
-  max-width: 150px;
+  max-width: 150px; 
   margin: auto;
   display: block;
   margin-bottom: 25px;
+  /* background-color:red; */
 }
 
 .skills{
@@ -119,10 +141,11 @@ h2{
   grid-area: header;
   padding: 50px;
   padding-bottom: 50px;
-  background-color: #F2F2F2;
+  background-color: #d9e1ef ; /*#F2F2F2; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: -155px;
 }
 
 .infos{
@@ -134,8 +157,10 @@ h2{
 /* CONTENT */
 .content{
   grid-area: content;
-  padding: 25px;
-  padding-top: 0px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-top: 0px; 
+  margin-left: -155px;
 }
 
 .experience-list{
@@ -148,7 +173,7 @@ progress::-moz-progress-bar {
   background: rgb(251, 253, 252); 
 }
 ::-webkit-progress-inner-element {
-  border: 0.5px solid black;
+  border: 0.2px  #ffffff;
 }
 /* For Chrome or Safari */
 progress::-webkit-progress-value {
