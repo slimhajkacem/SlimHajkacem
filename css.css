@@ -27,11 +27,12 @@ p{
   text-align: justify;
 }
 .UlLeft {  
-  margin-left: -22px; 
+  margin-left: -10px; 
 }
 ul{  
-  margin-left: -28px; 
+  margin-left: -10px; 
   margin-bottom: 2px;
+  
 }
 h1{
   margin: 0 0 1rem;
@@ -41,6 +42,7 @@ h1{
 .NomPrenom{
   margin-bottom: .1rem;
   margin-left: -40px;
+  text-align: right;
 }
 h2{
   margin: 0 0 1rem;
@@ -54,6 +56,7 @@ h2{
 .Poste{
   margin: 0 0 0;
   margin-left: -40px;
+  text-align: right;
 }
 .Liaison{
   text-transform: lowercase;
@@ -84,8 +87,8 @@ h2{
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-areas: "left-column right-column right-column";
-  width: 1400px;  
-  margin: 2px auto;
+  width: 1200px;  
+   margin: 20px auto;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -110,9 +113,15 @@ h2{
 
 .portait{
   border-radius: 25%;
-  max-width: 150px; 
+  /* max-width: 150px; 
+  max-height: 150px;   
+  
+   width : 100%; */
+  width : 140px; 
+  height : 160px; 
   margin: auto;
   display: block;
+  margin-top: 25px;
   margin-bottom: 25px;
   /* background-color:red; */
 }
@@ -129,7 +138,7 @@ h2{
 .right-column{
   grid-area: right-column;
   display: grid;
-  grid-template-rows: 180px 1fr;
+  grid-template-rows: 155px 1fr;
   grid-template-areas: 
     "header"
     "content";
@@ -137,15 +146,16 @@ h2{
 
 /* HEADER */
 .header{
-  height: 165px;
+  height: 150px;
   grid-area: header;
   padding: 50px;
-  padding-bottom: 50px;
+  padding-left: 20px;
+  /* padding-bottom: 50px; */
   background-color: #d9e1ef ; /*#F2F2F2; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: -155px;
+  margin-left: -50px;
 }
 
 .infos{
@@ -160,13 +170,16 @@ h2{
   padding: 10px;
   padding-left: 5px;
   padding-top: 0px; 
-  margin-left: -155px;
+  margin-left: -50px;
 }
 
 .experience-list{
-  list-style-type: circle;
+  /* list-style-type: circle; */
 }
+.EtudesFormation{
+  line-height: normal;
 
+}
 
 /* For Firefox */
 progress::-moz-progress-bar {
