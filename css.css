@@ -58,6 +58,7 @@ h2{
   margin: 0 0 0;
   margin-left: -40px;
   text-align: right;
+  text-transform: uppercase;
 }
 .Liaison{
   text-transform: lowercase;
